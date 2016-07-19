@@ -1,1 +1,9 @@
 D:\Work Preperation\MatchingPairs\MatchingPairs\bin\Debug\MatchingPairs.exe.config
+D:\Work Preperation\MatchingPairs\MatchingPairs\bin\Debug\MatchingPairs.exe
+D:\Work Preperation\MatchingPairs\MatchingPairs\bin\Debug\MatchingPairs.pdb
+D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.csprojResolveAssemblyReference.cache
+D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.Form1.resources
+D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.Properties.Resources.resources
+D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.csproj.GenerateResource.Cache
+D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.exe
+D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.pdb
