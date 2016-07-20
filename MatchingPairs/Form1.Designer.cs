@@ -49,6 +49,10 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.scoreTextBox = new System.Windows.Forms.TextBox();
             this.scoreCounter = new System.Windows.Forms.TextBox();
+            this.DigiClockTextBox = new System.Windows.Forms.TextBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -322,11 +326,54 @@
             this.scoreCounter.Text = "0";
             this.scoreCounter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // DigiClockTextBox
+            // 
+            this.DigiClockTextBox.Enabled = false;
+            this.DigiClockTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DigiClockTextBox.Location = new System.Drawing.Point(544, 159);
+            this.DigiClockTextBox.Name = "DigiClockTextBox";
+            this.DigiClockTextBox.Size = new System.Drawing.Size(100, 30);
+            this.DigiClockTextBox.TabIndex = 3;
+            this.DigiClockTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(544, 505);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 34);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Start Game";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(544, 123);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 30);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Time";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 554);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DigiClockTextBox);
             this.Controls.Add(this.scoreCounter);
             this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -360,6 +407,10 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox scoreTextBox;
         private System.Windows.Forms.TextBox scoreCounter;
+        private System.Windows.Forms.TextBox DigiClockTextBox;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

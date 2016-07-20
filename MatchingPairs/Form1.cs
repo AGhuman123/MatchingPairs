@@ -12,6 +12,8 @@ namespace MatchingPairs
         Label secondClicked = null;
         int count = 0;
 
+        private Stopwatch stopWatch;
+
         Random random = new Random();
         List<string> icons = new List<string>()
         {
@@ -43,6 +45,7 @@ namespace MatchingPairs
         private void label_Click(object sender, EventArgs e)
         {
             count++;
+
             if (timer1.Enabled == true)
                 return;
             Label clickedLabel = sender as Label;scoreCounter.Text = count.ToString();
@@ -92,8 +95,24 @@ namespace MatchingPairs
                         return;
                 }
             }
-            MessageBox.Show($"You had: {count} clicks" );
+            timer2.Stop();
+            MessageBox.Show($"You matched all pairs" + timer2.GetLifetimeService());
             Close();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            DigiClockTextBox.Text =
+        stopWatch.Elapsed.Hours.ToString("00") + ":" +
+        stopWatch.Elapsed.Minutes.ToString("00") + ":" +
+        stopWatch.Elapsed.Seconds.ToString("00");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            stopWatch = new Stopwatch();
+            timer2.Enabled = true;
+            stopWatch.Start();
         }
     }
 }
