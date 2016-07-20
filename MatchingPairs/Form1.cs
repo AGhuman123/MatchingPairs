@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -9,6 +10,7 @@ namespace MatchingPairs
     {
         Label firstClicked = null;
         Label secondClicked = null;
+        int count = 0;
 
         Random random = new Random();
         List<string> icons = new List<string>()
@@ -40,6 +42,7 @@ namespace MatchingPairs
 
         private void label_Click(object sender, EventArgs e)
         {
+            count++;
             if (timer1.Enabled == true)
                 return;
             Label clickedLabel = sender as Label;
@@ -55,6 +58,7 @@ namespace MatchingPairs
                 }
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
+
                 winner();
                 if (firstClicked.Text == secondClicked.Text)
                 {
@@ -86,7 +90,7 @@ namespace MatchingPairs
                         return;
                 }
             }
-            MessageBox.Show("You Won,Congratulations");
+            MessageBox.Show($"You had: {count} clicks" );
             Close();
         }
     }
