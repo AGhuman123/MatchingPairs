@@ -26,6 +26,8 @@ namespace MatchingPairs
             foreach (Control control in tableLayoutPanel1.Controls)
             {
                 Label iconLabel = control as Label;
+                iconLabel.Enabled = false;
+                iconLabel.Visible = false;
                 if (iconLabel != null)
                 {
                     int randomNumber = random.Next(icons.Count);
@@ -45,10 +47,11 @@ namespace MatchingPairs
         private void label_Click(object sender, EventArgs e)
         {
             count++;
-
+            
             if (timer1.Enabled == true)
                 return;
-            Label clickedLabel = sender as Label;scoreCounter.Text = count.ToString();
+            Label clickedLabel = sender as Label;
+            scoreCounter.Text = count.ToString();
             if (clickedLabel != null)
             {
                 if (clickedLabel.ForeColor == Color.Black)
@@ -110,7 +113,13 @@ namespace MatchingPairs
 
         private void button1_Click(object sender, EventArgs e)
         {
-            stopWatch = new Stopwatch();
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                Label iconlabel = control as Label;
+                iconlabel.Enabled = true;
+                iconlabel.Visible = true;
+            }
+                stopWatch = new Stopwatch();
             timer2.Enabled = true;
             stopWatch.Start();
         }
