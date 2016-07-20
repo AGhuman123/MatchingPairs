@@ -312,7 +312,7 @@
             this.scoreTextBox.Name = "scoreTextBox";
             this.scoreTextBox.Size = new System.Drawing.Size(100, 30);
             this.scoreTextBox.TabIndex = 1;
-            this.scoreTextBox.Text = "Score";
+            this.scoreTextBox.Text = "Clicks";
             this.scoreTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // scoreCounter
