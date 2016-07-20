@@ -47,6 +47,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.scoreTextBox = new System.Windows.Forms.TextBox();
+            this.scoreCounter = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +76,6 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -298,16 +299,42 @@
             this.timer1.Interval = 750;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // scoreTextBox
+            // 
+            this.scoreTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.scoreTextBox.Enabled = false;
+            this.scoreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreTextBox.Location = new System.Drawing.Point(544, 12);
+            this.scoreTextBox.Name = "scoreTextBox";
+            this.scoreTextBox.Size = new System.Drawing.Size(100, 30);
+            this.scoreTextBox.TabIndex = 1;
+            this.scoreTextBox.Text = "Score";
+            this.scoreTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // scoreCounter
+            // 
+            this.scoreCounter.Enabled = false;
+            this.scoreCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.scoreCounter.Location = new System.Drawing.Point(544, 48);
+            this.scoreCounter.Name = "scoreCounter";
+            this.scoreCounter.Size = new System.Drawing.Size(100, 41);
+            this.scoreCounter.TabIndex = 2;
+            this.scoreCounter.Text = "0";
+            this.scoreCounter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 539);
+            this.ClientSize = new System.Drawing.Size(668, 554);
+            this.Controls.Add(this.scoreCounter);
+            this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -331,6 +358,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox scoreTextBox;
+        private System.Windows.Forms.TextBox scoreCounter;
     }
 }
 

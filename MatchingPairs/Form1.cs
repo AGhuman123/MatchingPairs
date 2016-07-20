@@ -45,7 +45,7 @@ namespace MatchingPairs
             count++;
             if (timer1.Enabled == true)
                 return;
-            Label clickedLabel = sender as Label;
+            Label clickedLabel = sender as Label;scoreCounter.Text = count.ToString();
             if (clickedLabel != null)
             {
                 if (clickedLabel.ForeColor == Color.Black)
@@ -60,6 +60,7 @@ namespace MatchingPairs
                 secondClicked.ForeColor = Color.Black;
 
                 winner();
+                
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -68,6 +69,7 @@ namespace MatchingPairs
                 }
                 timer1.Start();
             }
+            
         }
 
     private void timer1_Tick(object sender, EventArgs e)
