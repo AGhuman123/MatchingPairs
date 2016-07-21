@@ -7,3 +7,4 @@ D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.Properti
 D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.csproj.GenerateResource.Cache
 D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.exe
 D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.pdb
+D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.Form2.resources
