@@ -8,3 +8,5 @@ D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.csproj.G
 D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.exe
 D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.pdb
 D:\Work Preperation\MatchingPairs\MatchingPairs\obj\Debug\MatchingPairs.Form2.resources
+D:\Work Preperation\MatchingPairs\MatchingPairs\bin\Debug\Database1.mdf
+D:\Work Preperation\MatchingPairs\MatchingPairs\bin\Debug\Database1_log.ldf
