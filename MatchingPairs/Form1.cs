@@ -42,6 +42,9 @@ namespace MatchingPairs
         {
             InitializeComponent();
             AssignIconsToSquares();
+
+            Form2 myForm2 = new Form2();
+            myForm2.Visible = false;
         }
 
         private void label_Click(object sender, EventArgs e)

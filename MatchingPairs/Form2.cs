@@ -19,9 +19,11 @@ namespace MatchingPairs
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 myForm = new Form1();
+            myForm.Show();
+
+            Form2 myForm2 = new Form2();
+            myForm2.Visible = false;
         }
     }
 }
