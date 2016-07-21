@@ -99,7 +99,7 @@ namespace MatchingPairs
                 }
             }
             timer2.Stop();
-            MessageBox.Show($"You matched all pairs" + timer2.GetLifetimeService());
+            MessageBox.Show("You matched all pairs" + timer2.GetLifetimeService());
             Close();
         }
 
